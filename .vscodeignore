@@ -1,0 +1,29 @@
+# VS Code Development Configuration And Test Directory
+.vscode/**
+.vscode-test/**
+
+# Source Code
+src/**
+
+# Git Configuration File
+.gitignore
+
+# Package Manager Configuration
+.yarnrc
+
+# Default Extension Documentation Template
+vsc-extension-quickstart.md
+
+# Development && Linter Configuration Files
+**/tsconfig.json
+**/eslint.config.mjs
+
+# Source Maps And TypeScript Source Files
+**/*.map
+**/*.ts
+
+# Test Runner Files
+**/.vscode-test.*
+
+# NPM Lock File
+package-lock.json

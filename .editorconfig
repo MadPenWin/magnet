@@ -1,0 +1,16 @@
+# EditorConfig Link: https://editorconfig.org
+
+# Top-Most EditorConfig File
+root = true
+
+# Matches Any String Of Characters, Except Path Separators (/)
+[*]
+
+# A Whole Number Defining The Number Of Columns Used For Each Identation
+indent_size = 2
+
+# Set To 'Tab' Or 'Space'
+indent_style = tab
+
+# New Line Ending Every File
+insert_final_newline = false

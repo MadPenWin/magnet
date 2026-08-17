@@ -1,0 +1,62 @@
+{
+	"name": "Magnet",
+	"displayName": "Magnet",
+	"description": "Your Personal AI Partner",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.125.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [{
+				"id": "msgPanel",
+				"title": "Magnet",
+				"icon": "media/commt-dissc.svg"
+			}]
+		},
+		"views": {
+			"msgPanel": [{
+				"id": "chatPanel",
+				"name": "chat-panel",
+				"type": "webview",
+				"icon": "media/commt-dissc.svg"
+			}]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.10",
+		"@types/node": "24.x",
+		"@types/vscode": "^1.125.0",
+		"@vscode/test-cli": "^0.0.15",
+		"@vscode/test-electron": "^3.0.0",
+		"eslint": "^10.5.0",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.61.1"
+	},
+	"overrides": {
+		"diff": "^8.0.4",
+		"serialize-javascript": "^7.0.6"
+	},
+	"dependencies": {
+		"systeminformation": "^5.33.1"
+	},
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/madpenwin/magnet"
+  }
+}

@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Compilation Output
+out/
+dist/
+
+# VS Code Test Output && Package files
+*.vsix
+.vscode-test/
+
+# OS/System Files
+.DS_Store
+Thumbs.db
+
+# Logs && Environment
+*.log
+.env

@@ -1,0 +1,23 @@
+# Base Model Parameter
+FROM qwen3:4b
+
+# Context Window Size In Tokens
+PARAMETER num_ctx 8192
+
+# Maximum Number Of Tokens To Predict/Generate
+PARAMETER num_predict 4029
+
+# Model Temperature For Response Randomness (Lower Is More Deterministic)
+PARAMETER temperature 0.1
+
+# Top-P (Nucleus) Sampling Threshold
+PARAMETER top_p 0.8
+
+# Penalty For Repeating Words/Phrases
+PARAMETER frequency_penalty 0.1
+
+# Number Of CPU Threads To Use For Generation
+PARAMETER num_thread 8
+
+# Number Of Layers To Offload To GPU (999 Offloads All Layers)
+PARAMETER num_gpu 999
