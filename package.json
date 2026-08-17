@@ -2,8 +2,9 @@
 	"name": "Magnet",
 	"displayName": "Magnet",
 	"description": "Your Personal AI Partner",
-	"version": "0.0.1",
-	"publisher": "xqz1409",
+	"version": "0.0.2",
+	"publisher": "MadPenWin",
+	"icon": "media/magnet.png",
 	"engines": {
 		"vscode": "^1.125.0"
 	},
